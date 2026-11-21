@@ -1,0 +1,19 @@
+{
+  "local_host": "127.0.0.1",
+  "local_port": 34132,
+  "mode": "ipv6",
+  "ipv6": {
+    "host": "2001:db8::1",
+    "port": 2443,
+    "authority": "v6.example.com"
+  },
+  "ipv4": {
+    "host": "192.0.2.1",
+    "port": 8080,
+    "authority": "example.com"
+  },
+  "timeout": 8,
+  "h2c_connections": 16,
+  "auth_user": "CHANGE_ME_USER",
+  "auth_password": "CHANGE_ME_STRONG_PASSWORD"
+}
