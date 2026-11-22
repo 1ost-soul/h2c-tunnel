@@ -5,6 +5,8 @@ A lightweight backup proxy tunnel based on **cleartext HTTP/2 (h2c) extended CON
 A local HTTP/SOCKS5 proxy accepts browser traffic and forwards it over an h2c connection to a VPS, which connects to the target site on behalf of the client and relays bytes in both directions. Supports both HTTP and HTTPS (via CONNECT tunneling).
 
 > **This project is a backup / experimental channel, not a high-performance replacement for production tools.** It is useful for protocol research and as a fallback when mainstream protocols are unavailable.
+>
+> **Scope note:** This repository is a public, learning-oriented implementation of the h2c idea from the CircumVolve paper. The proxy-to-VPS leg is cleartext HTTP/2; it does not provide encryption or traffic camouflage, and its traffic may be read or tampered with by an on-path intermediary. It is intended for experiments only and is not recommended for production, daily use, or privacy-sensitive real-world GFW bypass.
 
 ## How it works
 
